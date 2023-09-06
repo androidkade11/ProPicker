@@ -66,8 +66,8 @@ internal class ProPickerActivity : AppCompatActivity() {
 
     private fun prepareGallery() {
         val d = if (providerHelper.isToCompress())
-            D.showProgressDialog(this, "Compressing....", false)
-        else D.showProgressDialog(this, "Processing....", false)
+            D.showProgressDialog(this, "در حال پردازش ...", false)
+        else D.showProgressDialog(this, "در حال پردازش ...", false)
 
         if (!providerHelper.getMultiSelection()) {
             // Single choice
