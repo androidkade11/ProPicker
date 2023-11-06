@@ -182,18 +182,18 @@ internal class ProPickerActivity : AppCompatActivity() {
     }
 
     private fun showDialogToAcceptPermissions() {
-        showPermissionRationalDialog("You need to allow access to view and capture image")
+        showPermissionRationalDialog("برای استفاده از این قابلیت باید دسترسی های برنامه را فعال کنید")
     }
 
     private fun showPermissionRationalDialog(msg: String) {
         AlertDialog.Builder(this)
             .setMessage(msg)
             .setPositiveButton(
-                "OK"
+                "تایید"
             ) { dialog, which ->
                 goToSettings()
             }
-            .setNegativeButton("Cancel") { dialog, which ->
+            .setNegativeButton("لغو") { dialog, which ->
                 onBackPressed()
             }
             .create()
